@@ -11,8 +11,9 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI customOpenAPI() {
         Server server = new Server();
-        server.setUrl("https://freightfox-file-storage-service-f901d.containers.snapdeploy.app");
-        server.setDescription("SnapDeploy Production Server");
+        server.setUrl("https://freightfox-file-storage-service.onrender.com");
+        server.setDescription("Render Production Server");
+
 
         return new OpenAPI()
                 .addServersItem(server);
