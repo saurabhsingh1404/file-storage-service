@@ -3,11 +3,17 @@ spring:
     name: user-document-storage-service
   profiles:
     default: local
+
 server:
   port: 8080
+  forward-headers-strategy: framework
+
 app:
   storage:
     download-url-expiry-seconds: 300
+
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
