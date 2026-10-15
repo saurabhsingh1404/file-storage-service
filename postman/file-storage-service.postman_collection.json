@@ -1,0 +1,10 @@
+{
+  "info": {"name": "User Document Storage Service", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8080"}, {"key": "userName", "value": "sandy"}],
+  "item": [
+    {"name": "Search logistics files", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/users/{{userName}}/files?searchTerm=logistics&page=0&size=50"}},
+    {"name": "Search no-match example", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/users/{{userName}}/files?searchTerm=does-not-exist"}},
+    {"name": "Create download URL", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/users/{{userName}}/files/download?key=sandy%2Farchive%2Flogistics-report.pdf"}},
+    {"name": "Reject other user's key", "request": {"method": "GET", "url": "{{baseUrl}}/api/v1/users/sandy/files/download?key=alex%2Flogistics-invoice.xlsx"}}
+  ]
+}

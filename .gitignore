@@ -1,0 +1,52 @@
+```gitignore
+# ==============================
+# Java / Maven
+# ==============================
+target/
+*.class
+*.jar
+*.war
+
+# ==============================
+# IDE files
+# ==============================
+.idea/
+.vscode/
+*.iml
+
+# ==============================
+# Environment variables / Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+credentials
+credentials.*
+
+# ==============================
+# Local application configuration
+# ==============================
+src/main/resources/application-local.yml
+src/main/resources/application-local-s3.yml
+src/main/resources/application-*.local.yml
+
+# ==============================
+# Local test files
+# ==============================
+logistics-report.txt
+
+# ==============================
+# Logs
+# ==============================
+*.log
+logs/
+
+# ==============================
+# OS files
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini

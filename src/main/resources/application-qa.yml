@@ -1,0 +1,4 @@
+app:
+  storage:
+    bucket-name: ${QA_S3_BUCKET}
+    region: ${AWS_REGION:ap-south-1}

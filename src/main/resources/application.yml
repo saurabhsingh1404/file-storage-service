@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: user-document-storage-service
+  profiles:
+    default: local
+server:
+  port: 8080
+app:
+  storage:
+    download-url-expiry-seconds: 300
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
