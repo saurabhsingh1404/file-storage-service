@@ -8,7 +8,7 @@ import java.util.Map;
 @RestController
 public class HomeController {
 
-    @GetMapping("/")
+    @GetMapping({"/", "/healthz"})
     public Map<String, String> home() {
         return Map.of(
                 "application", "User Document Storage Service",
@@ -17,3 +17,4 @@ public class HomeController {
         );
     }
 }
+
